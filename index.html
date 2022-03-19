@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>TalkSynth</title>
+
+  </head>
+  <body>
+
+    <div class="TalkSynth">
+
+      <h1>TalkSynth</h1>
+
+      <select name="voice" id="voices">
+        <option value="">Select a voice</option>
+      </select>
+
+      <label for="rate">Rate:</label>
+      <input name="rate" type="range" min="0" max="3" value="1" step="0.1">
+
+      <label for=" pitch">Pitch:</label>
+      <input name="pitch" type="range" min="0" max="2" step="0.1">
+
+      <textarea name="text">Enter your awesome text here</textarea>
+
+      <button id="stop">Stop</button>
+      <button id="speak">Speak</button>
+      <button id="save">Save</button>
+
+    </div>
+    <script src="TextToSpeech.js"></script>
+
+  </body>
+</html>
